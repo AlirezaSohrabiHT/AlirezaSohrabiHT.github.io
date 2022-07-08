@@ -1,0 +1,22 @@
+#back{
+    margin: 5% 25%;
+    width: 100vh;
+    height: 80vh;
+    background-color: yellow;
+    border: 2px solid black;
+    text-align: center;
+
+}
+
+#back >h1{
+    margin-top: 15%;
+    word-spacing: 20px;
+    font-family: sans-serif;
+    font-size: 8vh;
+}
+
+#back >img{
+    width: 40vh;
+    height: auto;
+    margin-top: 5%;
+}
