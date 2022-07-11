@@ -75,7 +75,56 @@ img{
 }
 .line{
     margin-top: 4vh;
+    margin-bottom: 3vh;
     width: 100;
     height: 1mm;
     background-color: black;
+}
+.aboutme{
+    align-items: stretch;
+    display: flex;
+    flex-direction: row-reverse;
+}
+.textme{
+    /* border: 1px solid; */
+    text-align: left;
+    direction: ltr;
+}
+.boxs{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.box1{
+    margin: 2%;
+    width: 17vw;
+    height: 12vh;
+    border: 1px solid;
+}
+.box3{
+    position: absolute;
+    margin: 2%;
+    top: 120%;
+    right: 107%;
+    width: 100%;
+    height: 100%;
+    border: 1px solid rgb(0, 0, 0);
+}
+.box2{
+    position: relative;
+    margin: 2%;
+    width: 17vw;
+    height: 12vh;
+    border: 1px solid;
+}
+#more{
+    color: #000;
+    position: absolute;
+    top: 150%;
+    right: 18%;
+    font-size: 3vw;
+}
+.textme >p{
+    line-height: 130%;
+    text-align: center;
+    font-size: 2vw;
 }
