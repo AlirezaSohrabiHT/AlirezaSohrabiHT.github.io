@@ -1,3 +1,21 @@
+@keyframes bar {
+    0%{
+    }
+
+    50%{
+        background: linear-gradient(to right,#473333,#473333 3rem,transparent 1rem,transparent 100%);
+
+    }
+  100%{
+    background: linear-gradient(to right,#473333,#473333 6rem,transparent 3rem,transparent 100%);
+  }
+}
+
+
+
+
+
+/* *********************************** */
 #back{
     margin: 5% 25%;
     width: 100vh;
@@ -127,4 +145,80 @@ img{
     line-height: 130%;
     text-align: center;
     font-size: 2vw;
+}
+.skills{
+    position: absolute;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: left;
+    font-size: 2vw;
+    direction: ltr;
+    font-size: 2vw;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+.axbar{
+    position: relative;
+    width: 15vw;
+    height: 4vh;
+    left: 14%;
+    /* bottom: 3%; */
+        border: 1px solid ;
+    /* border-radius: 35%; */
+    animation: bar 5s normal;
+    animation-fill-mode: forwards;
+}
+#adt{
+    position: absolute;
+}
+#htt{
+    position: relative;
+    left: 35%;
+    bottom: 11%;
+}
+.htbar{
+    position: relative;
+    width: 15vw;
+    height: 4vh;
+    left: 45%;
+    bottom: 22%;
+    /* bottom: 3%; */
+        border: 1px solid ;
+    /* border-radius: 35%; */
+    animation: bar 5s normal;
+    animation-fill-mode: forwards;
+}
+
+#cst{
+    position: relative;
+    bottom: 15%;
+}
+.csbar{
+    position: relative;
+    width: 15vw;
+    height: 4vh;
+    left: 14%;
+    bottom: 28%;
+    /* bottom: 3%; */
+        border: 1px solid ;
+    /* border-radius: 35%; */
+    animation: bar 5s normal;
+    animation-fill-mode: forwards;
+}
+#jst{
+    position: relative;
+    bottom:  56%;
+    left: 65%;
+}
+.jsbar{
+    position: relative;
+    width: 15vw;
+    height: 4vh;
+    left: 80%;
+    bottom: 66%;
+    /* bottom: 3%; */
+        border: 1px solid ;
+    /* border-radius: 35%; */
+    animation: bar 5s normal;
+    animation-fill-mode: forwards;
 }
