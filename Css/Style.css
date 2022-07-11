@@ -1,13 +1,49 @@
+@keyframes adobexd {
+    0%{
+    }
+
+    50%{
+        background: linear-gradient(to right,#7e7e7e,#7e7e7e 3rem,transparent 1rem,transparent 100%);
+
+    }
+  100%{
+    background: linear-gradient(to right,#7e7e7e,#7e7e7e 6rem,transparent 3rem,transparent 100%);
+  }
+}
+@keyframes css {
+    0%{
+    }
+
+    50%{
+        background: linear-gradient(to right,#7e7e7e,#7e7e7e 3rem,transparent 1rem,transparent 100%);
+
+    }
+  100%{
+    background: linear-gradient(to right,#7e7e7e,#7e7e7e 9rem,transparent 9rem,transparent 100%);
+  }
+}
+@keyframes html {
+    0%{
+    }
+
+    50%{
+        background: linear-gradient(to right,#7e7e7e,#7e7e7e 3rem,transparent 1rem,transparent 100%);
+
+    }
+  100%{
+    background: linear-gradient(to right,#7e7e7e,#7e7e7e 9rem,transparent 9rem,transparent 100%);
+  }
+}
 @keyframes bar {
     0%{
     }
 
     50%{
-        background: linear-gradient(to right,#473333,#473333 3rem,transparent 1rem,transparent 100%);
+        background: linear-gradient(to right,#7e7e7e,#7e7e7e 3rem,transparent 1rem,transparent 100%);
 
     }
   100%{
-    background: linear-gradient(to right,#473333,#473333 6rem,transparent 3rem,transparent 100%);
+    background: linear-gradient(to right,#7e7e7e,#7e7e7e 6rem,transparent 3rem,transparent 100%);
   }
 }
 
@@ -45,7 +81,7 @@
 
 #header{
     background-color: black;
-
+    box-sizing: border-box;
     display: flex;
     flex-direction: row-reverse;
     gap: 20px;
@@ -147,25 +183,27 @@ img{
     font-size: 2vw;
 }
 .skills{
-    position: absolute;
+    /* position: absolute; */
     display: flex;
     flex-direction: row-reverse;
     justify-content: left;
+    align-items: left;
     font-size: 2vw;
     direction: ltr;
     font-size: 2vw;
     font-family: sans-serif;
-    font-weight: bold;
+    font-weight: bold;   
+    
 }
 .axbar{
     position: relative;
     width: 15vw;
     height: 4vh;
-    left: 14%;
+    left: 12%;
     /* bottom: 3%; */
         border: 1px solid ;
     /* border-radius: 35%; */
-    animation: bar 5s normal;
+    animation: adobexd 2s normal;
     animation-fill-mode: forwards;
 }
 #adt{
@@ -173,19 +211,19 @@ img{
 }
 #htt{
     position: relative;
-    left: 35%;
-    bottom: 11%;
+    left: 31%;
+    bottom: 14%;
 }
 .htbar{
     position: relative;
     width: 15vw;
     height: 4vh;
-    left: 45%;
-    bottom: 22%;
+    left: 38%;
+    bottom: 29%;
     /* bottom: 3%; */
         border: 1px solid ;
     /* border-radius: 35%; */
-    animation: bar 5s normal;
+    animation: html 2s normal;
     animation-fill-mode: forwards;
 }
 
@@ -197,28 +235,55 @@ img{
     position: relative;
     width: 15vw;
     height: 4vh;
-    left: 14%;
+    left: 12%;
     bottom: 28%;
     /* bottom: 3%; */
         border: 1px solid ;
     /* border-radius: 35%; */
-    animation: bar 5s normal;
+    animation: css 2s normal;
     animation-fill-mode: forwards;
 }
 #jst{
     position: relative;
-    bottom:  56%;
-    left: 65%;
+    bottom:  73%;
+    left: 57%;
 }
 .jsbar{
     position: relative;
     width: 15vw;
     height: 4vh;
-    left: 80%;
-    bottom: 66%;
+    left: 70%;
+    bottom: 89%;
     /* bottom: 3%; */
         border: 1px solid ;
     /* border-radius: 35%; */
-    animation: bar 5s normal;
+    animation: bar 2s normal;
     animation-fill-mode: forwards;
+}
+.footer{
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    align-items: left;
+    font-size: 2vw;
+    position: relative;
+    background-color: #000;
+    width: 100vw;
+    height: 12vh;
+    border: 1px solid;
+    line-height: 1.4;
+        /* margin-top: 20%; */
+    /* position: absolute; */
+}
+/* .row{
+    border: 1px solid;
+} */
+#skill{
+    height: 30vh;
+}
+#version{
+    color: #fff;
+    font-size: 1.1vw;
+    margin-left: 58%;
 }
