@@ -153,6 +153,13 @@ img{
     width: 17vw;
     height: 12vh;
     border: 1px solid;
+    font-family: sans-serif;
+    font-size: 2rem;
+    text-align: center;
+    align-items: center;
+}
+.box1 > a{
+    color: black;
 }
 .box3{
     position: absolute;
