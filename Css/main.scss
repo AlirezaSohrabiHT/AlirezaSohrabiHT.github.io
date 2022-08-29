@@ -1,0 +1,11 @@
+@font-face {
+    font-family: Rationale;
+    src: url("/Src/Fonts/Rationale-Regular.ttf");
+}
+
+body{
+    font-family: Rationale,sans-serif;
+    .navbar{
+        background-color: #131515;
+    }
+}

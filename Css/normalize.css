@@ -382,7 +382,7 @@ template {
   padding: 0;
 }
 body{
-  direction: rtl;
+  /* direction: rtl; */
   font-family: iransans;
   
 }
