@@ -22,15 +22,20 @@
         document.addEventListener('DOMContentLoaded', function () {
             var statusContainer = document.getElementById('status');
             
-            fetch('https://daneshgargroup.com/wp-json/mywebsite/v1/status/')
-                .then(response => response.json())
+            fetch('https://daneshgargroup.com/wp-json/mework/v1/status/')
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok: ' + response.statusText);
+                    }
+                    return response.json();
+                })
                 .then(data => {
-                    statusContainer.innerHTML = 'Views: ' + data.views + '<br>Visitors: ' + data.visitors;
-                    // You can format the output as you wish.
+                    statusContainer.innerHTML = 'Views: ' + data.page_views + '<br>Visitors: ' + data.unique_visitors;
+                    // The keys used here must match the ones provided by your API's JSON response
                 })
                 .catch(error => {
                     statusContainer.innerHTML = 'An error occurred';
-                    console.error(error);
+                    console.error('Fetch error:', error);
                 });
         });
     </script>
