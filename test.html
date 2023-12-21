@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Status Data</title>
+    <style>
+        /* Add some basic styling */
+        #status {
+            background-color: #f0f0f0;
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Status Data From My WordPress Site</h1>
+    <div id="status">Loading...</div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var statusContainer = document.getElementById('status');
+            
+            fetch('https://your-wordpress-site.com/wp-json/mywebsite/v1/status/')
+                .then(response => response.json())
+                .then(data => {
+                    statusContainer.innerHTML = 'Views: ' + data.views + '<br>Visitors: ' + data.visitors;
+                    // You can format the output as you wish.
+                })
+                .catch(error => {
+                    statusContainer.innerHTML = 'An error occurred';
+                    console.error(error);
+                });
+        });
+    </script>
+</body>
+</html>
