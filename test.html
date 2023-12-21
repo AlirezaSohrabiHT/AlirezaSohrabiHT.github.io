@@ -22,7 +22,7 @@
         document.addEventListener('DOMContentLoaded', function () {
             var statusContainer = document.getElementById('status');
             
-            fetch('https://your-wordpress-site.com/wp-json/mywebsite/v1/status/')
+            fetch('https://daneshgargroup.com/wp-json/mywebsite/v1/status/')
                 .then(response => response.json())
                 .then(data => {
                     statusContainer.innerHTML = 'Views: ' + data.views + '<br>Visitors: ' + data.visitors;
